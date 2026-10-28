@@ -10,6 +10,9 @@ name	Super Mario Odyssey
 ipa	SuperMarioOdyssey.ipa
 app_category	public.app-category.action-games
 pad_layout	full
+# agl's post-effect program (agl_technique_pfx.sharcb, as 3D World's 66a71a3081b91b9a) samples the RGB10A2 image it renders into as an attachment: without the snapshot
+# the iPhone 17 Pro shows 16x16 magenta blocks in the scene; DM_NVN_FB_SNAP=all named only this shader and cleared them, and this key alone keeps them cleared
+feedback_snap	5345f3231650f0b7
 
 # ---- Versions ----
 build	v393216	1.4.1	main=b424be150a8e7d78701cbe7a439d9ebf	subsdk0=93ff8252d975adf07230cb86c83301c5	sdk=fcf93a41b08c5193a1410d262602dc62
